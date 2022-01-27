@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+.sony-wrapper{
+    background-color: black;
+    min-height: 30px;
+}
+
+.sony-logo{
+    height: 14px;
+}
+
+nav{
+    color: #363636;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav .ms_chevron-grey{
+    width: 10px;
+    margin-left: 5px;
+}
+
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+.ms_search{
+    width: 25px;
+}
