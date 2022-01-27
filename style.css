@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    position: relative;
-}
-
 /* Header ------------------------- */
 
 header{
@@ -59,11 +55,32 @@ nav .ms_chevron-grey{
     width: 210px;
 }
 
-/* #jumbo .container-fluid{
-    padding: 50px;
-} */
-
 #jumbo .ms_button{
      background-color: #CD3D0F;
      color: white;
 }
+
+/* section 2 - ps5-intro */
+
+#ps5-intro img{
+    width: 100%;
+}
+
+.ms_border{
+    border-radius: 25px;
+    padding: 3px;
+}
+
+.ms_border-blue{
+    padding: 3px;
+    border: 2px solid #0070d1;
+}
+
+.ms_border img{
+    border-radius: 20px;
+}
+
+.ms_font-blue{
+    color: #0070d1;
+}
+
