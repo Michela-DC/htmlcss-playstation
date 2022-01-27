@@ -10,9 +10,12 @@ body{
 
 /* Header ------------------------- */
 
-.sony-wrapper{
+header{
     background-color: black;
-    min-height: 32px;
+}
+
+header .row{
+    min-height: 30px;
 }
 
 .sony-logo{
@@ -24,8 +27,6 @@ body{
 nav{
     background-color: white;
     color: #363636;
-    position: sticky;
-    top: 0;
     z-index: 10;
 }
 
@@ -58,10 +59,9 @@ nav .ms_chevron-grey{
     width: 210px;
 }
 
-#jumbo .container-fluid{
-    min-height: 535px;
+/* #jumbo .container-fluid{
     padding: 50px;
-}
+} */
 
 #jumbo .ms_button{
      background-color: #CD3D0F;
