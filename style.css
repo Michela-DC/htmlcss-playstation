@@ -8,16 +8,21 @@ body{
     position: relative;
 }
 
+/* Header ------------------------- */
+
 .sony-wrapper{
     background-color: black;
-    min-height: 30px;
+    min-height: 32px;
 }
 
 .sony-logo{
     height: 14px;
 }
 
+/* Navbar ------------------------- */
+
 nav{
+    background-color: white;
     color: #363636;
     position: sticky;
     top: 0;
@@ -35,4 +40,30 @@ nav .ms_chevron-grey{
 
 .ms_search{
     width: 25px;
+}
+
+/* Main ------------------------- */
+
+/* section 1 - jumbo */
+
+#jumbo{
+    background-image: url('img/jumbo-bg.png');
+    min-height: 535px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+#jumbo figure img{
+    width: 210px;
+}
+
+#jumbo .container-fluid{
+    min-height: 535px;
+    padding: 50px;
+}
+
+#jumbo .ms_button{
+     background-color: #CD3D0F;
+     color: white;
 }
