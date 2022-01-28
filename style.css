@@ -76,7 +76,7 @@ nav .ms_chevron-grey{
     max-width: 100%;
 }
 
-.ms_border{
+#console .ms_border{
     border-radius: 25px;
     outline: 4px solid white;
     outline-offset: -6px;
@@ -84,11 +84,11 @@ nav .ms_chevron-grey{
     border: 4px solid white;
 }
 
-.ms_border:active{
+#console .ms_border:active{
     border: 4px solid #0070d1;
 }
 
-.ms_font-blue{
+#console .ms_font-blue{
     color: #0070d1;
 }
 
@@ -128,4 +128,24 @@ nav .ms_chevron-grey{
 
 #it-takes-two{
     background-image: url("img/it-takes-two-hero-banner-desktop.jpg");
+}
+
+/* section 4 - new releases */
+
+#new-releases{
+    background-color: #202020;
+    color: white;
+}
+
+#new-releases img{
+    width: 100%;
+}
+
+#new-releases .ms_border{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#new-releases .ms_font-size{
+    font-size: 1.2rem;
 }
