@@ -124,5 +124,8 @@ nav .ms_chevron-grey{
     display: none;
 }
 
+/* section 4 - it takes two */
 
-
+#it-takes-two{
+    background-image: url("img/it-takes-two-hero-banner-desktop.jpg");
+}
