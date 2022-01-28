@@ -62,7 +62,8 @@ nav .ms_chevron-grey{
 
 /* section 2 - ps5-intro */
 
-#ps5-intro img{
+#ps5-intro img,
+#console img{
     width: 100%;
 }
 
@@ -84,3 +85,30 @@ nav .ms_chevron-grey{
     color: #0070d1;
 }
 
+/* section 3 - console */
+
+#console .ms_accessories{
+    width: 60%;
+}
+
+.ms_console-thumb::after{
+    content: "";
+    display: block;
+    position: absolute; /* il position relative l'ho dato nel'html */
+    height: 2px;
+    width: 100%;
+    top: 100%;
+    background-color: #0070d1;
+}
+
+.ms_overlay::before{
+    content: "";
+    display: block;
+    position: absolute; /* il position relative l'ho dato nel'html */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    opacity: 0.2;
+}
