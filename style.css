@@ -159,7 +159,6 @@ nav .ms_chevron-grey{
 }
 
 /* section 7 - ps plus banner*/
-
 #ps-plus-banner{
     background-color: #BEBCBC;
 }
@@ -177,4 +176,7 @@ nav .ms_chevron-grey{
     width: 100%;
 }
 
-
+/* section 8 - ps store */
+#ps-store img{
+    width: 100%;
+}
