@@ -188,8 +188,9 @@ nav .ms_chevron-grey{
     color: #161C3B;
 }
 
-/* section 8 - ps store  */
-#ps-store img{
+/* section 8 - ps store  
+section 10 - social media */
+#ps-store img, #social-media img{
     width: 100%;
 }
 
