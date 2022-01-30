@@ -71,9 +71,8 @@ nav .ms_chevron-grey{
 
 /* section 2 - ps5-intro */
 
-#ps5-intro img,
-#console img{
-    max-width: 60%;
+#ps5-intro img{
+    max-width: 100%;
 }
 
 #ps5-intro .ms_border{
@@ -94,7 +93,11 @@ nav .ms_chevron-grey{
 
 /* section 3 - console */
 
-#ps5-intro .ms_accessories{
+#console .ms_ps5-console{
+    width: 100%;
+}
+
+#console .ms_accessories{
     width: 60%;
 }
 
@@ -154,3 +157,24 @@ nav .ms_chevron-grey{
 #ps4 img{
     width: 100%;
 }
+
+/* section 7 - ps plus banner*/
+
+#ps-plus-banner{
+    background-color: #BEBCBC;
+}
+
+.ms_ps-plus img{
+    width: 55%;
+}
+
+#ps-plus-banner button{
+    color: #2D64E6;
+    background-color: #D9DADC;
+}
+
+.ms_ps-plus-games img{
+    width: 100%;
+}
+
+
