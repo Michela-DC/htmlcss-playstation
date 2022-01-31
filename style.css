@@ -207,7 +207,7 @@ section 10 - social media */
 /* Footer ---------------------------- */
 
 footer{
-    background-color: var(--blue-ps);
+    background-color: #00439B;
     color: white;
 }
 
@@ -217,7 +217,11 @@ footer{
 }
 
 .ms_sie-logo{
-    width: 20%;
+    width: 22%;
+}
+
+footer li{
+    margin-bottom: 10px;
 }
 
 footer a{
@@ -229,12 +233,36 @@ footer a:hover{
     color: var(--btn-ps-blus);
 }
 
+
 /* Medsia queries ---------------------- */
 
-@media (min-width: 768px){
+@media (min-width: 768px) and (max-width: 991.98px){
+    div[class^="container"]{
+        max-width: 100%;
+    }
 
     .game-banner figure img{
-        max-width: 400px;
+        max-width: 350px;
+    }
+
+    #console .ms_accessories{
+        width: 100%;
     }
 }
 
+@media (min-width: 576px) and (max-width: 767.98px){ 
+    div[class^="container"]{
+        max-width: 100%;
+    }
+
+    .game-banner figure img{
+        max-width: 270px;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+    .game-banner figure img{
+        max-width: 60%;
+    }
+}
