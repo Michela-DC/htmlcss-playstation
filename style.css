@@ -58,7 +58,12 @@ nav .ms_dropdown-menu ul:first-child::after{
     background-color: lightgrey;
 }
 
-nav .dropdown-item:hover {
+.ms_dropdown-menu ul:first-child .ms_dropdown-item{
+    border: 1px solid white;
+    /* ho dato un border all dropdown item anche quando non è in hover così non c'è lo sbalzo per l'aggiunta del border quando vado in hover */
+}
+
+.ms_dropdown-menu ul:first-child .ms_dropdown-item:hover {
     background-color: white;
     border: 1px solid lightgrey;
     border-radius: 5px;
@@ -66,16 +71,28 @@ nav .dropdown-item:hover {
 }
 
 .ms_menu-icons{
-    width: 50%;
+    width: 60px;
 }
 
-.ms_ul-container li{
-    list-style-type: disc;
-    color: var(--blue-ps);
+.ms_dropdown-menu ul:first-child li{
+    padding: 0 15px;
 }
 
-.ms_ul-container{
-    width: 60%;
+.ms_categories li{
+    position: relative;
+    padding: 0 20px;
+}
+
+.ms_categories li::before{
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: var(--blue-ps);
+    border-radius: 50%;
 }
 
 .ms_search{
@@ -86,9 +103,34 @@ nav .dropdown-item:hover {
 
 /* section 1 - returnal */
 
-#returnal{
-    background-image: url('img/jumbo-bg.png');
+.ms_banner-info{
+    position: absolute;
+    bottom: 0;
 }
+
+.ms_carousel-img{
+    min-height: 535px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.ms_carousel-img:first-child{
+    background-image: url('img/jumbo-bg.png');
+} 
+
+.ms_carousel-img:last-child{
+    background-image: url('https://www.nerdsbay.it/wp-content/uploads/2022/01/ratchet-and-clank-rift-apart-hero-banner-desktop-01-en-27jan21.jpg');
+}
+
+.ms_caption-width{
+    width: 40%;
+}
+
+/* #returnal{
+    background-image: url('img/jumbo-bg.png');
+} 
 
 .game-banner{
     background-position: center;
@@ -99,17 +141,18 @@ nav .dropdown-item:hover {
 
 .game-banner .row{
     min-height: 535px;
-    /* min-height meglio darla alla row così posso gestire il flex direttamente sulla row */
-}
+    min-height meglio darla alla row così posso gestire il flex direttamente sulla row 
+} 
+*/
 
 .game-banner figure img{
-    max-width: 210px;
+    max-width: 220px;
 }
 
 .game-banner .ms_button{
      background-color: #CD3D0F;
      color: white;
-}
+} 
 
 /* section 2 - ps5-intro */
 
@@ -185,6 +228,7 @@ nav .dropdown-item:hover {
 
 #it-takes-two{
     background-image: url("img/it-takes-two-hero-banner-desktop.jpg");
+    color: white;
 }
 
 /* section 5 - new releases */
@@ -242,6 +286,11 @@ nav .dropdown-item:hover {
     color: #161C3B;
 }
 
+#ps-plus button:hover,
+#ps-now button:hover{
+    color: red;
+}
+
 /* section 8 - ps store  
 section 10 - social media */
 #ps-store img, #social-media img{
@@ -282,6 +331,10 @@ footer a:hover{
 
 @media (min-width: 768px) and (max-width: 991.98px){
 
+    .ms_caption-width{
+        width: 100%;
+    }
+
     .game-banner figure img{
         max-width: 350px;
     }
@@ -289,9 +342,15 @@ footer a:hover{
     #console .ms_accessories{
         width: 100%;
     }
+    
 }
 
 @media (min-width: 576px) and (max-width: 767.98px){ 
+
+    .ms_caption-width{
+        width: 100%;
+    }
+
     .game-banner figure img{
         max-width: 270px;
     }
@@ -299,6 +358,11 @@ footer a:hover{
 }
 
 @media (max-width: 575.98px) {
+
+    .ms_caption-width{
+        width: 100%;
+    }
+
     .game-banner figure img{
         max-width: 60%;
     }
